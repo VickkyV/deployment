@@ -4,7 +4,7 @@ import streamlit as st
 
 
 # # loading the saved model
-loaded_model = pickle.load(open(r"C:\Users\USER\Desktop\Gomycode\loan_prediction_model_v2.pkl", "rb"))
+loaded_model = pickle.load(open("loan_prediction_model_v2.pkl", "rb"))
 
 def loan_prediction(input_data):
     input_data =(0, 0, 0, 1, 1.34, 0.5, 5.5, 180, 0, 0, 1, 0, 0, 1)
